@@ -1,10 +1,11 @@
-import DisplayCards from "./components/DisplayCard";
+import FetchAPI from "./components/FetchAPI";
 
 function App() {
+
+  const wellderlyAPI = "https://backend-deco.herokuapp.com/api/v1/user-emoji/";
+
   return (
-    <>
-      <DisplayCards content="Hello World" emoji="Happy"></DisplayCards>
-    </>
+    <FetchAPI url={wellderlyAPI} dummy="true"></FetchAPI>
   );
 }
 
